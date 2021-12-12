@@ -1,0 +1,77 @@
+:root {
+  --wine-red: #c7375f;
+  --dark-green: #344d2f;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
+  --dark-blue: #39588d;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Mountains of Christmas", cursive;
+  background: var(--dark-blue) url("north-star.jpg");
+  height: 100vh;
+}
+
+.container {
+  background: url("radio.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--snow);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2.4em 3em 2em 2.5em;
+  font-size: 2.1rem;
+  width: min(300px 90%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.material-icons-outlined {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 2.3rem;
+}
+
+button {
+  padding: 0.5em 0.7em;
+  margin: 0 0.22em 0.75em 0;
+  border: none;
+  font-size: 1.25rem;
+  background-color: var(--dark-green);
+  color: var(--snow);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.pause-btn {
+  background-color: var(--gold);
+  color: var(--wine-red);
+}
+
+.stop-btn {
+  background-color: var(--wine-red);
+}
+
+.volume-btn {
+  background-color: #39588d;
+}
