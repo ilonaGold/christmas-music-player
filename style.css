@@ -21,12 +21,13 @@ body,
 
 body {
   font-family: "Mountains of Christmas", cursive;
-  background: var(--dark-blue) url("north-star.jpg");
+  background: var(--dark-blue) url("north-star.jpg") no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
 .container {
-  background: url("radio.png") no-repeat;
+  background: url("radio.png");
   background-size: cover;
   background-position: center;
   color: var(--snow);
@@ -38,19 +39,24 @@ body {
   width: min(300px 90%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-top: 13.5em;
+}
+
+.bell {
+  margin-top: 0.3em;
 }
 
 .material-icons-outlined {
   padding-top: 5px;
   margin: 0;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 button {
   padding: 0.5em 0.7em;
-  margin: 0 0.22em 0.75em 0;
+  margin: 0 0.19em 0.7em 0;
   border: none;
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   background-color: var(--dark-green);
   color: var(--snow);
   border-radius: 50%;
@@ -73,5 +79,5 @@ button:hover {
 }
 
 .volume-btn {
-  background-color: #39588d;
+  background-color: var(--dark-blue);
 }
